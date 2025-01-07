@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letter Shift Dials</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-container">   
+        <!-- Game Section -->
+        <div id="game-container">
+          <h1>Shift Decoder</h1>
+          <div id="dials-container"></div>
+          <input type="number" id="shift-amount" placeholder="Enter shift amount">
+          <button id="shiftbtn" onclick="shiftDials()">Shift</button>
+          <p id="message"></p>
+          <p id="shiftcount"></p>
+          <button onclick="generateWord()">New Word</button>
+        </div>
+
+        <!-- Alphabet Section -->
+        <div id="alphabet">
+            <p class="vowel"><span>A</span> 1</p>
+            <p><span>B</span> 2</p>
+            <p><span>C</span> 3</p>
+            <p><span>D</span> 4</p>
+            <p class="vowel"><span>E</span> 5</p>
+            <p><span>F</span> 6</p>
+            <p><span>G</span> 7</p>
+            <p><span>H</span> 8</p>
+            <p class="vowel"><span>I</span> 9</p>
+            <p><span>J</span> 10</p>
+            <p><span>K</span> 11</p>
+            <p><span>L</span> 12</p>
+            <p><span>M</span> 13</p>
+            <p><span>N</span> 14</p>
+            <p class="vowel"><span>O</span> 15</p>
+            <p><span>P</span> 16</p>
+            <p><span>Q</span> 17</p>
+            <p><span>R</span> 18</p>
+            <p><span>S</span> 19</p>
+            <p><span>T</span> 20</p>
+            <p class="vowel"><span>U</span> 21</p>
+            <p><span>V</span> 22</p>
+            <p><span>W</span> 23</p>
+            <p><span>X</span> 24</p>
+            <p><span>Y</span> 25</p>
+            <p><span>Z</span> 26</p>
+          </div>
+      </div>
+  <script src="script.js"></script>
+</body>
+</html>

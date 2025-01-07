@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+  
+#game-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+  
+#dials-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+  
+.dial {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-family: monospace;
+    transition: transform 0.3s ease;
+}
+  
+input {
+    padding: 10px;
+    margin: 10px 0;
+}
+  
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+button:hover {
+    background-color: #0056b3;
+}
+
+#alphabet {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    text-align: center;
+    overflow: hidden;
+}
+
+#alphabet p {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 8px 0;
+    padding: 12px 15px;
+    background-color: #e7f7ff;
+    border-radius: 8px;
+    border: 1px solid #d1e7ff;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/*
+#alphabet p:nth-child(even) {
+    background-color: #d1f4e5;
+}
+*/
+
+#alphabet .vowel {
+    background-color: #B2F0E6;
+}
+
+#alphabet p:hover {
+    background-color: #d1e7ff;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#alphabet p span {
+    font-size: 18px;
+    color: #333;
+}
+
+#main-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    width: 100%; /* You can adjust the width */
+    height: 0%; /* You can adjust the height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Example background color */
+    border-radius: 8px; /* Optional border radius */
+}
+
+#alphabet {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    text-align: left;
+    padding: 20px;
+}
+
+@media (max-width: 950px) {
+    #main-container {
+        flex-direction: column; /* Stack elements vertically */
+        gap: 20px; /* Reduced gap */
+    }
+
+    #alphabet {
+        grid-template-columns: repeat(4, 1fr); /* Adjust to fewer columns */
+    }
+}
+
+@media (max-width: 240px) {
+    #alphabet {
+        grid-template-columns: 1fr; /* Single column on very narrow screens */
+    }
+}
